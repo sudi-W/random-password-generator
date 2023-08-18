@@ -1,0 +1,100 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222831;
+}
+
+#wrapper {
+    text-align: center;
+}
+
+#container {
+    text-align: left;
+    width: 500px;
+    padding: 0 20px;
+}
+
+h1 span {
+    display: block;
+}
+
+h1 {
+    font-size: 36px;
+    color: white;
+}
+
+h1 span {
+    color: #4ADF86;
+}
+
+p {
+    font-size: 20px;
+    color: white;
+}
+
+button {
+    display: block;
+    margin-bottom: 10px;
+    background-color: #10B981; 
+    color: white; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #2F3E53;
+}
+
+#passwords-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.password-box {
+    width: 45%;
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+    color: #55F991;
+    border-radius: 5px;
+    background-color: #273549;
+    border: none;
+}
+
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    #container {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    .password-box {
+        width: 100%;
+        margin-bottom: 10px; /* Add margin to separate password boxes vertically */
+    }
+
+    #passwords-container {
+        flex-direction: column; /* Change to a vertical layout for smaller screens */
+        align-items: center; /* Center align password boxes on smaller screens */
+    }
+}
