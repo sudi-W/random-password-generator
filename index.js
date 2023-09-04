@@ -1,6 +1,8 @@
 const password1El = document.getElementById("password1");
 const password2El = document.getElementById("password2");
 const passwordsContainer = document.getElementById("passwords-container");
+const generateButton = document.getElementById("generateButton");
+const clearButton = document.getElementById("clearButton");
 
 
 
@@ -42,3 +44,6 @@ function clearPassword() {
     passwordsContainer.style.display = "none";
 
 }
+
+generateButton.addEventListener("click", generatePassword);
+clearButton.addEventListener("click", clearPassword);
